@@ -1,0 +1,14 @@
+------- MAINNET FORKING ----------
+- scripts -->> test.js
+- The project contains Mainnet of DAI contract forked into my local blockchain
+- The 'hardhat config' file contains the blocknumber
+- In the project one account is impersonated and the other is funded 
+
+------- CONTRACT VERIFICATION
+- Contract can be verified with this script
+- npx hardhat verify --network rinkeby 0x51D144682C603428E41A9Bc5E250e95334BDD5F3
+- 0x51D... is the contract address
+- We can also pass constructor arguments like this
+- Verify with constructor arguments from command line
+ - npx hardhat --network rinkeby verify --constructor-args arguments.js          0x51D144682C603428E41A9Bc5E250e95334BDD5F3
+-The arguments.js file contains the arguments which is passed here
